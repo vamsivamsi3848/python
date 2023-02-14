@@ -1,0 +1,19 @@
+from collections import Counter
+def solve(pattern,string):
+    count_string = Counter(string)
+    count_pattern = Counter(pattern)
+    for i in pattern:
+        if i not in count_string or count_string[i]< count_pattern[i]:
+            return "NO"
+    return "YES"
+for i in range(int(input())):
+    p = input()
+    s = input()
+    print(solve(p,s))
+
+
+\\ details\\
+
+name: danduboina vamsi
+mail: vamsidanduboina23@gmail.com
+phone no: 9347823848
